@@ -1,9 +1,9 @@
 class CaptureHelper < Formula
   desc "Generic macOS ScreenCaptureKit CLI for window capture and agent evidence"
   homepage "https://github.com/deeeed/capture-helper"
-  url "https://github.com/deeeed/capture-helper/releases/download/v0.1.8/capture-helper-darwin-arm64"
-  version "0.1.8"
-  sha256 "49b22955cb87038e894f38fd006fa6ada16247f2296c3cd934ba547db098f78a"
+  url "https://github.com/deeeed/capture-helper/releases/download/v0.2.0/capture-helper-darwin-arm64"
+  version "0.2.0"
+  sha256 "cf118e73f3f07e718fd811520768000edc0ffa06d8faf0efcad47d1024fc9fa4"
   license "MIT"
 
   depends_on :macos
@@ -15,6 +15,6 @@ class CaptureHelper < Formula
   test do
     output = shell_output("#{bin}/capture-helper version")
     assert_match '"version"', output
-    assert_match '"0.1.8"', output
+    assert_match '"0.2.0"', output
   end
 end
