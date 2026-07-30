@@ -9,7 +9,7 @@ class CaptureHelper < Formula
   depends_on :macos
 
   def install
-    bin.install "capture-helper-darwin-arm64" => "capture-helper"
+    bin.install "capture-helper-darwin-universal" => "capture-helper"
   end
 
   test do
